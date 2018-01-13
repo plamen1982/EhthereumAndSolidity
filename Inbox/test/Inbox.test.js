@@ -18,11 +18,21 @@ class Car {
         return 'vroom';
     }
 }
+//we define car here so we can have a global scope for the variable car and we can access from 
+//beforeEach() for new instance and from it for testing values
+let car;
+//befeoreEach is run with new instance every time before it statements
+beforeEach(() => {
+    car = new Car();
+});
 //the string Car is for our info for the test
 describe('Car', () => {
     it('can park', () => {
-        const car = new Car();
         //check if the outcome of car.park() is equal to 'stopped'
         assert.equal(car.park(), 'stopped');
+    });
+
+    it('can drive', () => {
+        assert.equal(car.drive(), 'vroom')
     });
 });
