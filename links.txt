@@ -1,4 +1,6 @@
-https://iancoleman.io/bip39/
-https://faucet.rinkeby.io/
-http://remix.ethereum.org/
-MetaMask
+https://iancoleman.io/bip39/ - Mnemonic Code Converter
+https://faucet.rinkeby.io/ - Rinkeby Authenticated Faucet
+http://remix.ethereum.org/ - Solidity Online IDE 
+https://infura.io/ - PROVIDE SECURE, RELIABLE, AND SCALABLE ACCESS TO ETHEREUM AND IPFS
+https://rinkeby.etherscan.io/ - Rinkby Testnet Ethereum
+MetaMask - addon chrome. MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today
