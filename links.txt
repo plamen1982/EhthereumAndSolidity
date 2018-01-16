@@ -3,4 +3,5 @@ https://faucet.rinkeby.io/ - Rinkeby Authenticated Faucet
 http://remix.ethereum.org/ - Solidity Online IDE 
 https://infura.io/ - PROVIDE SECURE, RELIABLE, AND SCALABLE ACCESS TO ETHEREUM AND IPFS
 https://rinkeby.etherscan.io/ - Rinkby Testnet Ethereum
+https://etherconverter.online/ - Ethereum converter to Wei
 MetaMask - addon chrome. MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today
