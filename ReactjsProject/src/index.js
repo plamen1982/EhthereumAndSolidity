@@ -4,12 +4,9 @@ import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+import SearchBar from './components/search_bar'
 
 const API_KEY = 'AIzaSyD1T478tOSu0FLehyIeSceHoRufHHdoJls';
-
-
-
-import SearchBar from './components/search_bar'
 
 class App extends Component {
   constructor(props) {
