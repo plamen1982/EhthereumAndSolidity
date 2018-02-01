@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
-import SearchBar from './components/search_bar'
+import SearchBar from './components/search_bar';
+import NavBar from './components/nav_bar';
 
 const API_KEY = 'AIzaSyD1T478tOSu0FLehyIeSceHoRufHHdoJls';
 
@@ -14,7 +15,8 @@ class App extends Component {
 
     this.state = { 
       videos: [], 
-      selectedVideo: null  
+      selectedVideo: null,
+      term: ''   
     }
 
     this.videoSearch('New Brave World')
@@ -24,7 +26,8 @@ class App extends Component {
     YTSearch({key: API_KEY, term: term}, (videos) => {
       this.setState({ 
         videos: videos, 
-        selectedVideo: videos[0] 
+        selectedVideo: videos[0],
+        term: term 
       })
    })
   }
@@ -35,6 +38,10 @@ class App extends Component {
 
     return (
       <div>
+        <NavBar 
+          term = {this.state.term}
+          name={'Powered by Youtube'}
+        />
         <SearchBar onSearchTermChange={videoSearch}/>
         <VideoDetail video={this.state.selectedVideo}/>
         <VideoList
